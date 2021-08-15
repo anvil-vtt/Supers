@@ -1,0 +1,35 @@
+{
+  "name": "supers",
+  "version": "1.0.0",
+  "description": "The basic Supers! system for FoundryVTT",
+  "private": true,
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "webpack serve",
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anvil-vtt/Supers.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@typhonjs-fvtt/eslint-config-foundry.js": "^0.8.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^9.0.0",
+    "css-loader": "^5.2.6",
+    "eslint": "^7.28.0",
+    "eslint-webpack-plugin": "^2.5.4",
+    "prettier": "^2.3.1",
+    "prettier-loader": "^3.3.0",
+    "sass": "^1.34.1",
+    "sass-loader": "^12.0.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
