@@ -2,7 +2,6 @@
 const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
-const StylelintPlugin = require("stylelint-webpack-plugin");
 
 const ESLintPlugin = require("eslint-webpack-plugin");
 

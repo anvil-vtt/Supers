@@ -1,4 +1,3 @@
-
 export class SupersActorSheet extends ActorSheet {
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
@@ -9,7 +8,6 @@ export class SupersActorSheet extends ActorSheet {
 
   activateListeners(html) {
     super.activateListeners(html);
-
   }
 
   getData(options) {
