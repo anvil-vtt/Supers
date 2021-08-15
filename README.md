@@ -1,4 +1,4 @@
-# The Supsers! game system for FoundryVTT
+# The Supers! game system for FoundryVTT
 
 <p align="center">
 <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/anvil-vtt/Supers"> <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/anvil-vtt/Supers"> <img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/anvil-vtt/Supers/total" /> <img alt="GitHub Releases" src="https://img.shields.io/github/downloads/anvil-vtt/Supers/latest/total" /> <img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/anvil-vtt/Supers?label=latest%20release" /> 
