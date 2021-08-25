@@ -20,7 +20,7 @@ Hooks.once("init", async () => {
   Actors.unregisterSheet("core", ActorSheet);
   Items.unregisterSheet("core", ItemSheet);
 
-  // Register BrokenCompass actor sheets
+  // Register Supers! actor sheets
   Actors.registerSheet("supers", SupersActorSheet, {
     types: ["character"],
     makeDefault: true,

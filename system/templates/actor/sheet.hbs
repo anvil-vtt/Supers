@@ -1,3 +1,414 @@
 <form autocomplete="off" class="{{cssClass}}">
-
+    <div class="mainContainer">
+        <div class="thirds">
+            <div>
+                <input class="shadowed" type="text" placeholder="NAME / ALIAS" value="{{ actor.data.name }}">
+            </div>
+            <div>
+                <input class="shadowed" type="text" placeholder="SPIELER:IN">
+            </div>
+            <div>
+                <input class="shadowed" type="text" placeholder="ERSCHAFFUNGSWÜRFEL">
+            </div>
+        </div>
+    </div>
+    <div class="mainArea">
+        <div class="leftColumn">
+            <div class="resistances shadowed">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>RESISTENZEN</th>
+                        <th>MAX</th>
+                        <th>AKTUELL</th>
+                        <th>KOSTEN</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>HALTUNG</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input placeholder="A/B/K*"></td>
+                        <td><input></td>
+                        <td><input></td>
+                        <td><input></td>
+                    </tr>
+                    <tr>
+                        <td>ZÄHIGKEIT</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input placeholder="A/B/K*"></td>
+                        <td><input></td>
+                        <td><input></td>
+                        <td><input></td>
+                    </tr>
+                    <tr>
+                        <td>REAKTION</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input placeholder="A/B/K*"></td>
+                        <td><input></td>
+                        <td><input></td>
+                        <td><input></td>
+                    </tr>
+                    <tr>
+                        <td>WILLE</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input placeholder="A/B/K*"></td>
+                        <td><input></td>
+                        <td><input></td>
+                        <td><input></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">* <strong>A</strong>USGLEICH; <strong>B</strong>OOST ODER <strong>K</strong>OMPLIKATION
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="competencePool shadowed">
+                <table>
+                    <thead>
+                    <tr>
+                        <th colspan="3">KOMPETENZPOOL</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><input type="text" placeholder="BASIS"></td>
+                        <td><input type="text" placeholder="TKW"></td>
+                        <td><input type="text" placeholder="AKUT"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <img class="sheetLogo" src="/systems/supers/img/logo.png" title="Supers! Deutsche Ausgabe">
+            <div class="talents shadowed">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>#W</th>
+                        <th>TALENT</th>
+                        <th>KOSTEN</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="gray"><input type="number"></td>
+                        <td><input type="text" placeholder="AKADEMISCHES WISSEN"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text" placeholder="A/B/K*"></td>
+                    </tr>
+                    <tr>
+                        <td class="gray"><input type="number"></td>
+                        <td><input type="text" placeholder="AKADEMISCHES WISSEN"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text" placeholder="A/B/K*"></td>
+                    </tr>
+                    <tr>
+                        <td class="gray"><input type="number"></td>
+                        <td><input type="text" placeholder="AKADEMISCHES WISSEN"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text" placeholder="A/B/K*"></td>
+                    </tr>
+                    <tr>
+                        <td class="gray"><input type="number"></td>
+                        <td><input type="text" placeholder="AKADEMISCHES WISSEN"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text" placeholder="A/B/K*"></td>
+                    </tr>
+                    <tr>
+                        <td class="gray"><input type="number"></td>
+                        <td><input type="text" placeholder="AKADEMISCHES WISSEN"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text" placeholder="A/B/K*"></td>
+                    </tr>
+                    <tr>
+                        <td class="gray"><input type="number"></td>
+                        <td><input type="text" placeholder="AKADEMISCHES WISSEN"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text" placeholder="A/B/K*"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="rightColumn">
+            <div class="powers shadowed">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>#W</th>
+                        <th>KRAFT</th>
+                        <th>KOSTEN</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="gray"><input type="number"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text" placeholder="A/B/K*"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="gray"><input type="number"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text" placeholder="A/B/K*"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="gray"><input type="number"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text" placeholder="A/B/K*"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="gray"><input type="number"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text" placeholder="A/B/K*"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="gray"><input type="number"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text" placeholder="A/B/K*"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="gray"><input type="number"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text" placeholder="A/B/K*"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="gray"><input type="number"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text" placeholder="A/B/K*"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">* <strong>A</strong>USGLEICH; <strong>B</strong>OOST ODER <strong>K</strong>OMPLIKATION
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="advantages_disadvantages shadowed">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>#W</th>
+                        <th>VORTEIL/NACHTEIL</th>
+                        <th>KOSTEN</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="gray"><input type="number"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text" placeholder="A/B/K*"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="gray"><input type="number"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text" placeholder="A/B/K*"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="gray"><input type="number"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text" placeholder="A/B/K*"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="gray"><input type="number"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text" placeholder="A/B/K*"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="gray"><input type="number"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text" placeholder="A/B/K*"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="gray"><input type="number"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text" placeholder="A/B/K*"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="gray"><input type="number"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text" placeholder="A/B/K*"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">* <strong>A</strong>USGLEICH; <strong>B</strong>OOST ODER <strong>K</strong>OMPLIKATION
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="equipment shadowed">
+        <table>
+            <thead>
+            <tr>
+                <th>AUSRÜSTINGSKATEGORIE</th>
+                <th>TYP</th>
+                <th>DP</th>
+                <th>FEUERRATE</th>
+                <th>NAH</th>
+                <th>MITTEL (-1W)</th>
+                <th>FERN (-2W)</th>
+                <th>TARNMODIFIKATOR</th>
+                <th>DEFENSIV BONUS</th>
+                <th>NOTIZ</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </form>

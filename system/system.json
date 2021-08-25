@@ -3,8 +3,13 @@
   "title": "Supers!",
   "description": "The basic Supers! system for FoundryVTT",
   "version": "0.0.1",
-  "author": "Patrick Bauer (Daddi#2333)",
-  "scripts": ["system.js"],
+  "authors": [
+    "Patrick Bauer (Daddi#2333)",
+    "Tobias Franz (kid2407 / Tobias#6450)"
+  ],
+  "scripts": [
+    "system.js"
+  ],
   "styles": [],
   "languages": [
     {

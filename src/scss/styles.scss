@@ -1,0 +1,82 @@
+:root {
+    --fieldMargin:  10px;
+    --sheetPadding: 30px;
+}
+
+.supers.sheet .window-content {
+    background-image: unset;
+    background-color: #ffcd00;
+    padding:          var(--sheetPadding);
+
+    .shadowed {
+        box-shadow: 5px 5px black;
+        border:     1px black solid;
+    }
+
+    input {
+        border-radius:    0;
+        padding:          5px;
+        background-color: white;
+    }
+
+    .thirds {
+        display:               grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .thirds > div {
+        margin-right: var(--fieldMargin);
+    }
+
+    .thirds > div:last-of-type {
+        margin-right: 0;
+    }
+
+    .mainArea {
+        display:               grid;
+        grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+        grid-column-gap:       20px;
+    }
+
+    .competencePool {
+        width:     50%;
+        min-width: 160px;
+    }
+
+    .powers thead tr > th:nth-of-type(1), .talents thead tr > th:nth-of-type(1), .advantages_disadvantages thead tr > th:nth-of-type(1) {
+        width: 30px;
+    }
+
+    .powers thead tr > th:nth-of-type(3), .talents thead tr > th:nth-of-type(3), .advantages_disadvantages thead tr > th:nth-of-type(3) {
+        width: 70px;
+    }
+
+    table {
+        table-layout:     fixed;
+        margin:           0;
+        background-color: white;
+    }
+
+    table tr td {
+        border: 1px dotted gray;
+    }
+
+    table input {
+        width:  100%;
+        border: unset;
+    }
+
+    .gray, .gray > input {
+        background-color: lightgray;
+    }
+
+    img.sheetLogo {
+        max-width:  100%;
+        max-height: 100%;
+        margin-top: 20px;
+    }
+
+    .resistances, .competencePool, .talents, .powers, .advantages_disadvantages, .equipment {
+        margin-top: 20px;
+    }
+}
